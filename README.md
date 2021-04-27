@@ -11,14 +11,14 @@ Stop
 ```bash 
   bash stop
 ```
-## Use your pravite hub?
-- Please change ```hinora``` on ```build.sh``` and all ```.*yaml``` in ```kubernetes``` to your private hub
-
 And you can open on browser:
 - http://localhost:31080/service-1/action-1
 - http://localhost:31080/service-1/action-2
 - http://localhost:31080/service-2/action-1
 - http://localhost:31080/service-2/action-2
+## Use your pravite hub?
+- Please change ```hinora``` on ```build.sh``` and all ```.*yaml``` in ```kubernetes``` to your private hub
+
 ## Authors
 - [@hinora](https://github.com/hinora)
 
