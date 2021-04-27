@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-service-proxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: service-proxy
+  template:
+    metadata:
+      name: pod-service-proxy
+      labels:
+        service: service-proxy
+    spec:
+      containers:
+      - name: node
+        image: hinora/service-proxy
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "100m"
+        ports:
+          - containerPort: 3000

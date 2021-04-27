@@ -1,0 +1,6 @@
+node-k8s-1/node_modules/
+node-k8s-2/node_modules/
+node-k8s-proxy/node_modules/
+node-k8s-1/package-lock.json
+node-k8s-2/package-lock.json
+node-k8s-proxy/package-lock.json

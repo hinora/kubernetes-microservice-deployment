@@ -1,0 +1,19 @@
+{
+  "name": "monolith-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js",
+    "docker-dev": "docker build -t hinora/service-1 . && docker run -d --rm -p 3001:3001 hinora/service-1",
+    "build": "docker-compose build",
+    "start": "docker run -d --rm -p 3001:3001 hinora/service-1"
+  },
+  "author": "",
+  "license": "ISC"
+}
